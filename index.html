@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Web Designer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-chubby/css/uicons-regular-chubby.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_task" />
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="interactions.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#"><img class="navbar-brand-img" src="https://imgur.com/4Jid0go.png" alt="Felipe Burian Dev"></a>
+
+            <!-- Botão para WhatsApp na tela mobile -->
+            <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-btn-mobile d-lg-none">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <!-- Botão para expandir o menu no mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links do Menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botão do WhatsApp -->
+            <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-btn d-none d-lg-inline-block">
+             &nbsp;<i class="fi fi-brands-whatsapp"></i>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="home-section d-flex align-items-center justify-content-center">
+        <div class="container text-center" id="particles-container">
+            <h1 class="home-title">Bem-vindo ao Meu Portfólio</h1>
+            <p class="home-subtitle">Design criativo e soluções personalizadas para o seu negócio</p>
+            <a href="#portfolio" class="btn btn-primary home-button">Meu Trabalho</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center py-5">
+        <div class="container">
+            <h2 class="about-title">Sobre Mim</h2>
+            <p class="about-text">Sou um web designer apaixonado por criar experiências visuais impactantes e intuitivas, com foco em design responsivo e criação de templates de newsletters.</p>
+            <p class="about-text">Combinando habilidades técnicas e criatividade, transformo ideias em projetos personalizados para cada cliente.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section py-5">
+        <div class="container text-center">
+            <h2 class="portfolio-title">Portfólio de Projetos</h2>
+            <div class="row portfolio-grid">
+                <!-- Item 1 -->
+                <div class="col-md-4 portfolio-item">
+                    <div class="portfolio-image" style="background-image: url('https://imgur.com/NSq0CnY.png');">
+                        <div class="portfolio-overlay">
+                            <h3>Landing Page Criativa</h3>
+                            <p>Desenvolvimento de uma landing page interativa e responsiva.</p>
+                            <a href="#" class="open-modal">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-md-4 portfolio-item">
+                    <div class="portfolio-image" style="background-image: url('https://imgur.com/r4TK7ZP.png');">
+                        <div class="portfolio-overlay">
+                            <h3>Template para Newsletters</h3>
+                            <p>Modelo personalizável para campanhas de e-mail marketing.</p>
+                            <a href="#" class="open-modal">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-md-4 portfolio-item">
+                    <div class="portfolio-image" style="background-image: url('https://imgur.com/NcV0Tec.png');">
+                        <div class="portfolio-overlay">
+                            <h3>Website Corporativo</h3>
+                            <p>Design clean e moderno para presença online profissional.</p>
+                            <a href="#" class="open-modal">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-md-4 portfolio-item">
+                    <div class="portfolio-image" style="background-image: url('projeto4.jpg');">
+                        <div class="portfolio-overlay">
+                            <h3>Aplicativo de Quiz</h3>
+                            <p>Interface interativa para um aplicativo de quiz educacional.</p>
+                            <a href="#" class="open-modal">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container text-center">
+            <h2 class="services-title">Serviços</h2>
+            <div class="row">
+                <!-- Serviço 1: Template para Newsletters -->
+                <div class="col-md-4 service-item">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Newsletters</h3>
+                        <p>Criação de templates responsivos e personalizados para campanhas de e-mail marketing.</p>
+                    </div>
+                </div>
+                <!-- Serviço 2: Criação de Websites -->
+                <div class="col-md-4 service-item">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>Criação de Websites</h3>
+                        <p>Desenvolvimento de sites modernos e funcionais, focados na experiência do usuário.</p>
+                    </div>
+                </div>
+                <!-- Serviço 3: Criação de Aplicativos -->
+                <div class="col-md-4 service-item">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Aplicativos em Flutter</h3>
+                        <p>Desenvolvimento de aplicativos cross-platform com performance e design excepcionais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Work Process Section -->
+    <section id="work-process" class="work-process-section py-5">
+        <div class="container text-center">
+            <h2 class="process-title">Processo de Trabalho</h2>
+            <div class="timeline-horizontal">
+                <!-- Etapa 1: Planejamento -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fi fi-ss-layer-plus"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Planejamento e Pesquisa</h3>
+                        <p>Análise de requisitos, objetivos e expectativas do cliente.</p>
+                    </div>
+                </div>
+                <!-- Etapa 2: Estrutura e Design -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fi fi-ss-department-structure"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Estrutura e Design</h3>
+                        <p>Criação do wireframe e protótipos com foco em UI/UX.</p>
+                    </div>
+                </div>
+                <!-- Etapa 3: Desenvolvimento -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fi fi-rr-magic-wand"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Criação</h3>
+                        <p>Programação das funcionalidades e integração de APIs.</p>
+                    </div>
+                </div>
+                <!-- Etapa 4: Testes e Ajustes -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fi fi-rs-badge-check"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Testes e Ajustes</h3>
+                        <p>Verificação de bugs, otimização de performance e melhorias.</p>
+                    </div>
+                </div>
+                <!-- Etapa 5: Lançamento -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fi fi-rc-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Lançamento e Entrega</h3>
+                        <p>Publicação e entrega final do projeto ao cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section py-5">
+        <div class="container text-center">
+            <h2 class="blog-title">Blog</h2>
+            <div class="row">
+                <!-- Artigo 1 -->
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-card-content">
+                            <h3>Meus princípios de Design para Web</h3>
+                            <p>Explorando os fundamentos de design que tornam websites atraentes e funcionais.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artigo 2 -->
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-card-content">
+                            <h3>Escolhendo as Paletas de Cores</h3>
+                            <p>Descubra as melhores práticas para escolher cores que destacam e equilibram o design.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artigo 3 -->
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-card-content">
+                            <h3>Tendências em UX e UI Design para 2024</h3>
+                            <p>Veja o que está em alta no mundo do design de interfaces e experiência do usuário.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Links Institucionais -->
+                <div class="col-md-4 footer-column">
+                    <h4>Sobre Mim</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <!-- Informações de Contato -->
+                <div class="col-md-4 footer-column">
+                    <h4>Contato</h4>
+                    <p>Email: felipeqburian@gmail.com</p>
+                    <p>Telefone: (11) 94970-1753</p>
+                    <p>São Paulo - SP</p>
+                </div>
+                <!-- Redes Sociais -->
+                <div class="col-md-4 footer-column">
+                    <h4>Siga-me</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-3">
+                <p>&copy; 2024 Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Modal de Portfólio -->
+<div id="portfolioModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h3>Detalhes do Projeto</h3>
+        <p>Aqui você pode inserir uma descrição mais detalhada sobre o projeto, funcionalidades, tecnologias usadas, ou até imagens e links adicionais.</p>
+    </div>
+</div>
+
+</body>
+
+</html>

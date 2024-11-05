@@ -1,0 +1,711 @@
+
+            /* Fontes Personalizadas*/
+
+            .merriweather-light {
+                font-family: "Merriweather", serif;
+                font-weight: 300;
+                font-style: normal;
+            }
+  
+            .merriweather-regular {
+                font-family: "Merriweather", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+  
+            .merriweather-bold {
+                font-family: "Merriweather", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+  
+            .merriweather-black {
+                font-family: "Merriweather", serif;
+                font-weight: 900;
+                font-style: normal;
+            }
+  
+            .merriweather-light-italic {
+                font-family: "Merriweather", serif;
+                font-weight: 300;
+                font-style: italic;
+            }
+  
+            .merriweather-regular-italic {
+                font-family: "Merriweather", serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+  
+            .merriweather-bold-italic {
+                font-family: "Merriweather", serif;
+                font-weight: 700;
+                font-style: italic;
+            }
+  
+            .merriweather-black-italic {
+                font-family: "Merriweather", serif;
+                font-weight: 900;
+                font-style: italic;
+            }
+            /* Estilos personalizados */
+  
+            .navbar-brand,
+            h1,
+            h2,
+            h3,
+            p,
+            footer {
+              font-family: Arial, sans-serif;
+          }
+  
+          .portfolio-item,
+          .testimonial-item {
+              margin-bottom: 30px;
+          }
+  
+          footer {
+              background-color: #333;
+              color: #fff;
+              padding: 20px;
+          }
+  
+          footer a {
+              color: #fff;
+          }
+  
+          /* Estilos personalizados */
+          /* Background geral */
+          body {
+              background-color: #121212; /* Fundo principal escuro */
+              color: #e0e0e0; /* Cor do texto principal em tons claros */
+          }
+  
+  
+  
+      /* Estilo Geral do Navbar */
+      .navbar {
+          background-color: #1e1e1e;
+          font-family: "Merriweather", serif;
+          border-bottom: 2px solid #ffdd57;
+          transition: background-color 0.3s ease, box-shadow 0.3s ease;
+          z-index: 1000;
+      }
+  
+      /* Quando o Navbar é fixo */
+      .fixed-top {
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+  
+      /* Logo */
+      .navbar-brand {
+          color: #ffdd57;
+          font-size: 1.5rem;
+          font-weight: bold;
+      }
+  
+      .navbar-brand-img {
+          max-width: 150px;
+      }
+  
+      /* Links do Menu */
+      .navbar-nav .nav-link {
+          color: #e0e0e0;
+          font-size: 1rem;
+          padding: 10px 20px;
+          transition: color 0.3s ease, transform 0.3s ease;
+      }
+  
+      .navbar-nav .nav-link:hover {
+          color: #ffdd57;
+          transform: scale(1.1);
+      }
+  
+      /* Botão do WhatsApp */
+      .whatsapp-btn {
+          line-height: 1rem;
+          background-color: #25d366;
+          color: #ffffff;
+          padding: 8px 8px;
+          border-radius: 30px;
+          font-size: 1.5rem;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+  
+      .whatsapp-btn i {
+          margin-right: 5px;
+      }
+  
+      .whatsapp-btn:hover {
+          background-color: #1ebc59;
+          transform: scale(1.05);
+      }
+  
+      /* Botão de WhatsApp no Mobile */
+      .whatsapp-btn-mobile {
+          color: #25d366;
+          font-size: 1.5rem;
+          transition: color 0.3s ease;
+      }
+  
+      .whatsapp-btn-mobile:hover {
+          color: #1ebc59;
+      }
+  
+      /* Responsivo */
+      @media (max-width: 991px) {
+          .navbar-nav {
+              text-align: center;
+              margin-top: 10px;
+          }
+  
+          .whatsapp-btn {
+              display: none;
+          }
+      }
+  
+  
+  
+      /* Seções de conteúdo */
+      h1,
+      h2,
+      h3,
+      p,
+      footer {
+          font-family: Arial, sans-serif;
+      }
+  
+      .portfolio-item,
+      .testimonial-item {
+          margin-bottom: 30px;
+      }
+  
+      /* Footer */
+      footer {
+          background-color: #333;
+          color: #fff;
+          padding: 20px;
+      }
+  
+      footer a {
+          color: #fff;
+          transition: color 0.3s ease;
+      }
+  
+      footer a:hover {
+          color: #ffdd57;
+      }
+  
+      /* Estilos da seção Home */
+      .home-section {
+          height: 100vh;
+          background: linear-gradient(to right, rgba(30, 30, 30, 0.5), rgba(50, 50, 50, 0.5)), 
+          url('sua-imagem-de-fundo.jpg') center/cover no-repeat;
+          color: #e0e0e0; /* Cor do texto */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+      }
+  
+      .home-title {
+          font-family: "Merriweather Sans", sans-serif;
+          font-size: 3rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+      }
+  
+      .home-subtitle {
+          font-size: 1.2rem;
+          margin-bottom: 30px;
+      }
+  
+      .home-button {
+          font-size: 1.1rem;
+          padding: 10px 20px;
+          font-family: "Merriweather Sans", sans-serif;
+          background-color: #ffdd57; /* Botão em tom vibrante */
+          color: #121212; /* Texto do botão em tom escuro */
+          font-weight: bold;
+          border: none;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+      }
+  
+      .home-button:hover {
+          background-color: #ffd43b;
+      }
+  
+      /* Ajustes responsivos */
+      @media (max-width: 768px) {
+          .home-title {
+              font-size: 2rem;
+          }
+          
+          .home-subtitle {
+              font-size: 1rem;
+          }
+          
+          .home-button {
+              font-size: 1rem;
+              padding: 8px 16px;
+          }
+      }
+  
+      /* Estilos da seção About */
+      .about-section {
+          background-color: #1e1e1e;
+          color: #e0e0e0;
+          position: relative;
+          overflow: hidden;
+          padding: 60px 0;
+      }
+  
+      .about-title {
+          font-family: "Merriweather Sans", sans-serif;
+          color: #ffdd57;
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+          opacity: 0;
+          transform: translateY(20px);
+          animation: fadeInUp 1s ease forwards;
+      }
+  
+      .about-text {
+          font-size: 1.2rem;
+          margin: 15px auto;
+          max-width: 800px;
+          line-height: 1.6;
+          opacity: 0;
+          transform: translateY(20px);
+          animation: fadeInUp 1.5s ease forwards;
+      }
+  
+      .about-text:nth-of-type(2) {
+          animation-delay: 1.8s;
+      }
+  
+      /* Animação fadeInUp (reutilizada da seção Home) */
+  
+      /* Estilos da seção de Portfólio */
+      .portfolio-section {
+          background-color: #1e1e1e;
+          color: #e0e0e0;
+          padding: 60px 0;
+      }
+  
+      .portfolio-title {
+          font-family: "Merriweather Sans", sans-serif;
+          color: #ffdd57;
+          font-size: 2.5rem;
+          margin-bottom: 40px;
+      }
+  
+      /* Grade de itens do portfólio */
+      .portfolio-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+      }
+  
+      .portfolio-item {
+          position: relative;
+          overflow: hidden;
+          border-radius: 10px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+  
+      .portfolio-item:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      }
+  
+      .portfolio-image {
+          width: 100%;
+          padding-top: 80%; /* Proporção da imagem */
+          background-size: cover;
+          background-position: center;
+          filter: brightness(0.8); /* Valor ajustável (menor que 1 para escurecer) */
+          border-radius: 8px;
+      }
+  
+      /* Sobreposição com informações */
+      .portfolio-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.75);
+          color: #e0e0e0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.4s ease;
+          padding: 20px;
+          border-radius: 10px;
+      }
+  
+      .portfolio-item:hover .portfolio-overlay {
+          opacity: 1;
+      }
+  
+      .portfolio-overlay h3 {
+          font-size: 1.4rem;
+          color: #ffdd57;
+          margin-bottom: 10px;
+      }
+  
+      .portfolio-overlay a{
+          color:#ffdd57;
+      }
+  
+      .portfolio-overlay p {
+          font-size: 1rem;
+          color: #e0e0e0;
+          opacity: 0;
+          transform: translateY(10px);
+          transition: opacity 0.4s ease, transform 0.4s ease;
+      }
+  
+      .portfolio-item:hover .portfolio-overlay p {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  
+      /* Estilos da seção de Serviços */
+      .services-section {
+          background-color: #1e1e1e;
+          color: #e0e0e0;
+          padding: 60px 0;
+      }
+  
+      .services-title {
+          font-family: "Merriweather Sans", sans-serif;
+          color: #ffdd57;
+          font-size: 2.5rem;
+          margin-bottom: 40px;
+      }
+  
+      /* Layout de itens de serviço */
+      .service-item {
+          padding: 15px;
+      }
+  
+      .service-card {
+          background-color: #292929;
+          font-family: "Merriweather Sans", sans-serif;
+          border-radius: 10px;
+          padding: 30px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          text-align: center;
+          color: #e0e0e0;
+      }
+  
+      .service-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      }
+  
+      /* Ícone de serviço */
+      .service-icon {
+          font-size: 2.5rem;
+          color: #ffdd57;
+          margin-bottom: 15px;
+      }
+  
+      .service-card h3 {
+          font-size: 1.5rem;
+          color: #e0e0e0;
+          margin-bottom: 10px;
+      }
+  
+      .service-card p {
+          font-size: 1rem;
+          color: #b0b0b0;
+      }
+  
+  
+      /* Estilos da seção de Processo de Trabalho */
+      .work-process-section {
+          background-color: #1e1e1e;
+          color: #e0e0e0;
+          padding: 60px 0;
+      }
+  
+      .process-title {
+          font-family: "Merriweather Sans", sans-serif;
+          color: #ffdd57;
+          font-size: 2.5rem;
+          margin-bottom: 40px;
+      }
+  
+      /* Timeline horizontal */
+      .timeline-horizontal {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          position: relative;
+      }
+  
+      .timeline-horizontal::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 10%;
+          right: 10%;
+          height: 4px;
+          background-color: #ffdd57;
+          z-index: -1;
+      }
+  
+      /* Cada item da timeline */
+      .timeline-item {
+          position: relative;
+          text-align: center;
+          max-width: 200px;
+          padding: 20px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+  
+      .timeline-item:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      }
+  
+      .timeline-icon {
+          width: 40px;
+          height: 40px;
+          background-color: #ffdd57;
+          color: #1e1e1e;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 10px;
+          font-size: 1.5rem;
+      }
+  
+      .timeline-content {
+          background-color: #292929;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s ease;
+      }
+  
+      .timeline-content h3 {
+          color: #ffdd57;
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+      }
+  
+      .timeline-content p {
+          color: #b0b0b0;
+          font-size: 0.9rem;
+      }
+  
+      /* Responsivo */
+      @media (max-width: 768px) {
+          .timeline-horizontal {
+              flex-direction: column;
+              align-items: center;
+          }
+  
+          .timeline-horizontal::before {
+              top: 0;
+              bottom: 0;
+              left: 50%;
+              width: 4px;
+              height: 90%;
+              transform: translateX(-50%);
+          }
+  
+          .timeline-item {
+              max-width: none;
+          }
+      }
+      /* Estilos da seção de Blog */
+      .blog-section {
+          background-color: #1e1e1e;
+          color: #e0e0e0;
+          padding: 60px 0;
+      }
+  
+      .blog-title {
+          font-family: "Merriweather Sans", sans-serif;
+          color: #ffdd57;
+          font-size: 2.5rem;
+          margin-bottom: 40px;
+      }
+  
+      /* Estilo dos cartões do blog */
+      .blog-card {
+          background-color: #292929;
+          border-radius: 10px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          overflow: hidden;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          margin-bottom: 30px;
+          padding: 20px;
+      }
+  
+      .blog-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      }
+  
+      .blog-card-content {
+          color: #e0e0e0;
+      }
+  
+      .blog-card-content h3 {
+          font-family: "Merriweather", serif;
+          font-size: 1.4rem;
+          color: #ffdd57;
+          margin-bottom: 10px;
+          transition: color 0.3s ease;
+      }
+  
+      .blog-card-content p {
+          font-size: 0.9rem;
+          color: #b0b0b0;
+      }
+  
+      /* Microinteração ao passar o mouse */
+      .blog-card:hover h3 {
+          color: #ffd700;
+      }
+  
+  
+      /* Estilos do Footer */
+      .footer {
+          background-color: #1e1e1e;
+          color: #e0e0e0;
+          padding: 40px 0;
+          font-size: 0.9rem;
+      }
+  
+      .footer h4 {
+          color: #ffdd57;
+          margin-bottom: 15px;
+          font-size: 1.2rem;
+      }
+  
+      .footer-links {
+          list-style: none;
+          padding: 0;
+      }
+  
+      .footer-links li {
+          margin-bottom: 8px;
+      }
+  
+      .footer-links a {
+          color: #e0e0e0;
+          text-decoration: none;
+          transition: color 0.3s ease;
+      }
+  
+      .footer-links a:hover {
+          color: #ffdd57;
+      }
+  
+      .footer-column p {
+          margin: 8px 0;
+      }
+  
+      /* Redes sociais */
+      .social-links {
+          display: flex;
+          gap: 10px;
+      }
+  
+      .social-icon {
+          color: #e0e0e0;
+          font-size: 1.2rem;
+          transition: color 0.3s ease, transform 0.3s ease;
+      }
+  
+      .social-icon:hover {
+          color: #ffdd57;
+          transform: scale(1.2);
+      }
+  
+      /* Footer Bottom */
+      .footer-bottom {
+          border-top: 1px solid #333;
+          padding-top: 15px;
+          font-size: 0.8rem;
+      }
+  
+      .footer-bottom p {
+          margin: 0;
+          color: #a0a0a0;
+      }
+  
+      /* Responsivo */
+      @media (max-width: 768px) {
+          .footer-column {
+              text-align: center;
+              margin-bottom: 20px;
+          }
+      }
+  
+      /* Estilos do Modal */
+      .modal {
+          display: none; /* Inicialmente oculto */
+          position: fixed;
+          z-index: 1000;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
+      }
+  
+      .modal-content {
+          background-color: #2e2e2e;
+          margin: 10% auto;
+          padding: 20px;
+          border-radius: 10px;
+          width: 90%;
+          max-width: 500px;
+          color: #fff;
+          text-align: center;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+  
+      .close {
+          color: #ffdd57;
+          text-align: right;
+          font-size: 1.5rem;
+          font-weight: bold;
+          cursor: pointer;
+      }
+  
+      .close:hover {
+          color: #ffcc00;
+      }
+  
+      /* Footer */
+      footer {
+          background-color: #1e1e1e;
+          color: #e0e0e0;
+      }
+  
+      footer a {
+          color: #ffdd57;
+      }
