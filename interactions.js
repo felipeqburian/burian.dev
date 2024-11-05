@@ -74,3 +74,66 @@
             });
         });
     
+        const canvas = document.getElementById('minimalist-bg');
+        const ctx = canvas.getContext('2d');
+        
+        // Ajusta o tamanho do canvas para cobrir a tela
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Configurações das partículas
+        const particles = [];
+        const numParticles = 20;
+        
+        // Classe para criar partículas com movimento sutil
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 60 + 20; // Partículas maiores para o efeito de “neblina”
+                this.opacity = Math.random() * 0.1 + 0.05;
+                this.speedX = (Math.random() - 0.5) * 0.2;
+                this.speedY = (Math.random() - 0.5) * 0.2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+        
+                // Reposiciona partículas ao saírem da tela
+                if (this.x < -this.size || this.x > canvas.width + this.size || this.y < -this.size || this.y > canvas.height + this.size) {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                }
+            }
+            draw() {
+                ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.closePath();
+                ctx.fill();
+            }
+        }
+        
+        // Inicializa as partículas
+        function initParticles() {
+            for (let i = 0; i < numParticles; i++) {
+                particles.push(new Particle());
+            }
+        }
+        initParticles();
+        
+        // Animação sutil das partículas
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+        
